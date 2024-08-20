@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Playwrite+IT+Moderna:wght@100..400&display=swap");
+
+.light-theme {
+  --main-col: #fff7e1;
+  --text-col: rgb(0, 0, 0);
+  --img-bg: rgb(255, 255, 255);
+  --logo-bg: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0px 60px 0px 60px;}
+.dark-theme {
+  margin: 0;
+  padding: 0px 60px 0px 60px;  
+  --main-col: rgb(0, 0, 0);
+  --text-col: rgb(255, 255, 255);
+  --img-bg: rgb(0, 0, 0);
+  --logo-bg: rgb(255, 255, 255);
+}
+.subContainer{
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-around;
+    align-items: center;
+}
+.content1>h3{margin: 0;
+color: var(--text-col);
+text-align: center;
+font-family: "Acme", sans-serif;
+font-size: 3em;
+}
+.content2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.forms>input{
+    width: 23em;
+    height: 7vh;
+    padding: 1px 10px 1px 10px;
+    font-size: 21px;
+    background: transparent;
+    border: 2px solid #e6ce8b;
+    border-radius: 13px;
+    font-family: cursive;
+    transition: 1.2s ease-in-out;
+}
+.forms .typeo{
+    width: 23em;
+    height: 17vh;
+    padding: 1px 10px 1px 10px;
+    font-size: 21px;
+    background: transparent;
+    border: 2px solid #e6ce8b;
+    border-radius: 13px;
+    font-family: cursive;
+    transition: 1.2s ease-in-out;
+}
+
+input:focus,input:active
+{
+    color: blue;
+    cursor: pointer;
+    border: 2px solid #dea70e;
+    background-color: #ffe595;
+}
+.typeo:focus,.typeo:active
+{
+    color: blue;
+    cursor: pointer;
+    border: 2px solid #dea70e;
+    background-color: #ffe595;
+}
+

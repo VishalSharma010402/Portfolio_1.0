@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Playwrite+IT+Moderna:wght@100..400&display=swap");
+
+.light-theme {
+  --main-col: #fff7e1;
+  --text-col: rgb(0, 0, 0);
+  --img-bg: rgb(255, 255, 255);
+  --logo-bg: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0px 60px 0px 60px;
+}
+.dark-theme {
+  margin: 0;
+  padding: 0px 60px 0px 60px;
+  --main-col: rgb(0, 0, 0);
+  --text-col: rgb(255, 255, 255);
+  --img-bg: rgb(0, 0, 0);
+  --logo-bg: rgb(255, 255, 255);
+}
+
+/*Components css of SkillName.jsx*/
+.tick{
+    display: flex;
+    align-items: center;
+}
+.tick > span {
+    font-size: 30px;
+    font-family: monospace;
+    color: var(--text-col);
+}
+ion-icon {
+    color: var(--text-col);
+    width: 30px;
+}
+/* till here */
+.heading{
+    margin:0;
+    margin: 0;
+    color: var(--text-col);
+    text-align: center;
+    font-family: "Acme", sans-serif;
+    font-size: 3em;
+}
+.cont1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+hr{
+    width: 50%;
+    height: 2px;
+    background-color: var(--text-col);
+    border: none;
+    margin: 30px auto;
+}
+.onSkills{
+
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    gap: 20px;
+}
+
+.skill {
+  /* background-color: var(--main-col); */
+  margin: 20px 0px 20px 0px;
+  width: auto;
+  margin-bottom: 10px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*Rainbow card*/
+.card {
+  --background: var(--main-col);
+  --green: #1fc11b;
+  --yellow: #ffd913;
+  --orange: #ff9c55;
+  --red: #ff5555;
+  --violet: #555bff;
+  /* display: flex;
+  flex-direction: column; */
+  gap: 1em;
+  background: var(--background);
+  padding: 1rem;
+  border: 3px solid var(--violet);
+  transition: box-shadow 1s, top 1s, left 1s;
+  box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--green),
+    0 0 0 -3px var(--background), 0 0 0 0 var(--yellow),
+    0 0 0 -3px var(--background), 0 0 0 0 var(--orange),
+    0 0 0 -3px var(--background), 0 0 0 0 var(--red);
+}
+
+/*Hover*/
+.card:hover {
+  box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+    20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+    30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+    40px -40px 0 -3px var(--background), 40px -40px var(--red);
+}
